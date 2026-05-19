@@ -1,20 +1,23 @@
 {
-  "lastOpened": "2026-05-19T07:22:25.941Z",
-  "totalSeconds": 7495,
+  "lastOpened": "2026-05-19T07:25:18.940Z",
+  "totalSeconds": 7558,
   "viewSeconds": {
-    "teaserDeck": 6334,
+    "teaserDeck": 6389,
     "pitchDeck": 1061,
-    "onePager": 100
+    "onePager": 108
   },
   "slideSeconds": {
-    "teaserDeck:hero": 6279,
+    "teaserDeck:hero": 6287,
     "pitchDeck:market": 3,
-    "onePager": 100,
+    "onePager": 108,
     "pitchDeck:hero": 790,
     "pitchDeck:problem": 4,
     "pitchDeck:custom-1779111914366": 264,
-    "teaserDeck:closing": 2,
-    "teaserDeck:breakthrough": 53
+    "teaserDeck:closing": 46,
+    "teaserDeck:breakthrough": 53,
+    "teaserDeck:problem": 1,
+    "teaserDeck:market": 1,
+    "teaserDeck:moat": 1
   },
   "investorSeconds": {
     "investor@aiai3d.io": 3
