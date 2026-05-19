@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "documents": {
+    "onePager": {},
+    "teaserDeck": {
+      "s1_sub": "The trusted infrastructure layer for architectural AI."
+    },
+    "pitchDeck": {
+      "s1_sub": "The trusted infrastructure layer for\narchitectural AI. test"
+    }
+  },
+  "sources": {
+    "onePager": "teaserDeck",
+    "teaserDeck": "pitchDeck",
+    "pitchDeck": ""
+  },
+  "slideOrder": {
+    "onePager": [
+      "hero",
+      "problem",
+      "breakthrough",
+      "market",
+      "trust",
+      "moat",
+      "team",
+      "ask",
+      "closing"
+    ],
+    "teaserDeck": [
+      "hero",
+      "problem",
+      "breakthrough",
+      "market",
+      "trust",
+      "moat",
+      "team",
+      "ask",
+      "closing"
+    ],
+    "pitchDeck": [
+      "hero",
+      "problem",
+      "breakthrough",
+      "market",
+      "trust",
+      "moat",
+      "team",
+      "ask",
+      "closing",
+      "custom-1779111914366"
+    ]
+  },
+  "settings": {
+    "adminPassword": "472918",
+    "pitchEmail": "investor@aiai3d.io",
+    "pitchPassword": "1234",
+    "pitchAccess": [
+      {
+        "email": "investor@aiai3d.io",
+        "password": "1234",
+        "label": "Default Investor",
+        "active": true,
+        "createdAt": "2026-05-18T00:00:00.000Z"
+      },
+      {
+        "email": "asfasdfsdf@sdfsdf.com",
+        "password": "1234",
+        "label": "Hjaldahl Group",
+        "active": true,
+        "createdAt": "2026-05-18T13:42:18.102Z"
+      }
+    ]
+  },
+  "customSlides": {
+    "onePager": [],
+    "teaserDeck": [],
+    "pitchDeck": [
+      {
+        "id": "custom-1779111914366",
+        "template": "metrics",
+        "title": "Test slide",
+        "kicker": "Traction",
+        "body": "Summarize the signal investors should care about.",
+        "quote": "Momentum is easiest to understand when the proof is visible.",
+        "imageUrl": "",
+        "metrics": [
+          {
+            "label": "Pipeline",
+            "value": "€0"
+          },
+          {
+            "label": "Pilots",
+            "value": "0"
+          },
+          {
+            "label": "Conversion",
+            "value": "0%"
+          }
+        ]
+      }
+    ]
+  }
+}

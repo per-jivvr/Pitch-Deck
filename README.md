@@ -1,16 +1,70 @@
-# React + Vite
+# aiai3D Investor Suite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Full-stack investor deck app with:
 
-Currently, two official plugins are available:
+- One Pager, Teaser Deck, and Pitch Deck views.
+- Shared server-side persistence for admin edits in `data/suite.json`.
+- Server-side analytics persistence in `data/analytics.json`.
+- Admin login for editing content, images, access credentials, slide order, custom slides, data labels, and analytics.
+- Per-investor Pitch Deck email/password access.
+- Investor-targeted analytics by email, including logins, last seen, total time, and slide time.
+- Data-flow visibility for Pitch Deck -> Teaser Deck -> One Pager inheritance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run Locally
 
-## React Compiler
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open:
 
-## Expanding the ESLint configuration
+```text
+http://localhost:4173
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Production
+
+```bash
+npm run build
+npm run start
+```
+
+## Default Access
+
+Admin password:
+
+```text
+472918
+```
+
+Default Pitch Deck access:
+
+```text
+investor@aiai3d.io
+1234
+```
+
+Change these in the Admin panel under `Access`.
+
+Additional investor emails can be added in Admin -> Access. Each investor gets separate credentials and separate analytics.
+
+## Persistence Model
+
+Admin changes are written to:
+
+```text
+data/suite.json
+```
+
+Visitor engagement analytics are written to:
+
+```text
+data/analytics.json
+```
+
+These files are shared by the server, so the next viewer receives the latest saved data.
+
+## Data Flow
+
+Pitch Deck is the source of truth. Teaser Deck reads missing fields from Pitch Deck, and One Pager reads missing fields from Teaser Deck. Editing a field in a downstream document creates a local override. Clear the override to inherit from the upstream source again.
